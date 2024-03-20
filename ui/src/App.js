@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
+import ContextHome from "./pages/ContextHome";
+import ReduxHome from "./pages/ReduxHome";
 
 import "./App.css";
 
@@ -11,7 +12,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
+          <Route exact path="/context/" element={<ContextHome />} />
+          <Route exact path="/redux/" element={<ReduxHome />} />
         </Routes>
       </Router>
     </div>
