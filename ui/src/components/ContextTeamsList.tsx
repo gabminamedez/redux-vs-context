@@ -1,17 +1,17 @@
-import { useTeamsContext } from "../contexts/TeamsContext";
+import { useTeamsContext } from "src/contexts/TeamsContext";
 
-const ContextImages = () => {
+const ContextTeamsList = () => {
   const { selectedLeague, teams } = useTeamsContext();
 
   return (
     <div>
       <h2>{selectedLeague}</h2>
 
-      {teams.map((team) => {
+      {teams.map((team: string) => {
         return <p>{team}</p>;
       })}
     </div>
   );
 };
 
-export default ContextImages;
+export default ContextTeamsList;
